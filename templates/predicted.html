@@ -1,0 +1,17 @@
+<html>
+<body>
+{% if disease_pred %}
+<h2>Predicted Disease - {{ disease_pred }}</h2>
+{% endif %}
+{% if flag==1 %}
+{% if doctor %}
+<h3>Consult immediately the below mentioned doctor</h3>
+<h2>Doctor Details</h2>
+<h3>{{ doctor }}</h3>
+{% endif %}
+{% endif %}
+<form action="{{ url_for('predicted',disease=disease_pred,doctor=doctor) }}" method="post">
+<button type="submit" value="Consult" name="Submitt">Consult Doctor</button>
+</form>
+</body>
+</html>
