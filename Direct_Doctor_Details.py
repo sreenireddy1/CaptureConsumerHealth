@@ -7,14 +7,14 @@ import csv
 
 def Book_Appointment(Disease):
 
-    Dict={1:'Fungal infection',2:'Allergy',3:'GERD',4:'Chronic cholestasis',5:'Drug Reaction',
-    6:'Peptic ulcer disease',7:'AIDS',8:'Diabetes ',9:'Gastroenteritis',10:'Bronchial Asthma',11:'Hypertension ',
-    12:'Migraine',13:'Cervical spondylosis',
-    14:'Paralysis (brain hemorrhage)',15:'Jaundice',16:'Malaria',17:'Chicken pox',18:'Dengue',19:'Typhoid',20:'hepatitis A',
-    21:'Hepatitis B',22:'Hepatitis C',23:'Hepatitis D',24:'Hepatitis E',25:'Alcoholic hepatitis',26:'Tuberculosis',
-    27:'Common Cold',28:'Pneumonia',29:'Dimorphic hemmorhoids(piles)',30:'Heart attack',31:'Varicose veins',32:'Hypothyroidism',
+    Dict={1:'Fungalinfection',2:'Allergy',3:'GERD',4:'Chronic_cholestasis',5:'Drug_reaction',
+    6:'Peptic_ulcer_diseae',7:'AIDS',8:'diabetes',9:'Gastroenteritis',10:'Bronchial_Asthma',11:'Hypertension',
+    12:'Migraine',13:'Cervical_spondylosis',
+    14:'Paralysis',15:'Jaundice',16:'Malaria',17:'Chicken_pox',18:'Dengue',19:'Typhoid',20:'Hepatitis_A',
+    21:'Hepatitis_B',22:'Hepatitis_C',23:'Hepatitis_D',24:'Hepatitis_E',25:'Alcoholic_hepatitis',26:'Tuberculosis',
+    27:'Common_Cold',28:'Pneumonia',29:'Dimorphic_hemmorhoids',30:'Heart_attack',31:'Varicose_veins',32:'Hypothyroidism',
     33:'Hyperthyroidism',34:'Hypoglycemia',35:'Osteoarthristis',36:'Arthritis',
-    37:'(vertigo) Paroymsal  Positional Vertigo',38:'Acne',39:'Urinary tract infection',40:'Psoriasis',
+    37:'Vertigo',38:'Acne',39:'Urinary_tract_infection',40:'Psoriasis',
     41:'Impetigo'}
 
     def get_key1(val):
@@ -159,6 +159,5 @@ def Book_Appointment(Disease):
         return ans
 
     return main()
-
 
 

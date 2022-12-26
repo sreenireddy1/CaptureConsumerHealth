@@ -1,17 +1,59 @@
-<html>
-<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/output.css">
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Latest compiled and minified CSS 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+
+
+    <title>Vydha</title>
+</head>
+<body style="background-color:#16a085;">
+   
+<header class="header">
+
+  <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> VYDHYA </a>
+
+  <nav class="navbar">
+    <a href="{{ url_for('index') }}">Home</a>
+      <a href="{{ url_for('index') }}">Services</a>
+      <a href="{{ url_for('index') }}">About</a>
+      <a href="{{ url_for('index') }}">Doctors</a>
+      <a href="{{ url_for('index') }}">Book</a>
+      <a href="{{ url_for('index') }}">Review</a>
+      <a href="{{ url_for('index') }}">Blogs</a>
+      <a href="{{ url_for('login') }}">
+   <button id="login" class="btn btn-primary log" >Login</button>
+   </a></nav>
+
+
+  <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+<div style="border-top:160px;padding-bottom:25px;width:60%;background-color:#fff;" id="output">
+    <fieldset>
+        <legend style="font-size:25px;text-align: center;">Results</legend>
+               
 {% if disease_pred %}
-<h2>Predicted Disease - {{ disease_pred }}</h2>
+<h3>Predicted Disease - {{ disease_pred }}</h3>
 {% endif %}
 {% if flag==1 %}
 {% if doctor %}
-<h3>Consult immediately the below mentioned doctor</h3>
-<h2>Doctor Details</h2>
+<p>Consult the below mentioned doctor  immediately !</p>
+<h3>Doctor Details</h3>
 <h3>{{ doctor }}</h3>
 {% endif %}
 {% endif %}
-<form action="{{ url_for('predicted',disease=disease_pred,doctor=doctor) }}" method="post">
-<button type="submit" value="Consult" name="Submitt">Consult Doctor</button>
-</form>
-</body>
-</html>
+        <form action="{{ url_for('predicted',disease=disease_pred,doctor=doctor) }}" method="post">
+        <div id="submitbutton">
+            <button type="submit" id="suggest" style="font-size:30px ;" value="Consult" name="Submitt" action=""> Consult Doctor</button>
+        <p></p>
+        </form>
+    </fieldset>
+</div>

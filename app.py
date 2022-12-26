@@ -81,7 +81,7 @@ def book_appointment():
         appointmentData['date']=request.form['u_date']
 
         db.AppointmentData.insert_one(appointmentData)
-        return render_template('appointment.html',doctor=doctor)
+        return render_template('appointment.html',doctor=doctor,date=appointmentData['date'])
 
 @app.route("/predicted/<disease>/<doctor>",methods=["GET","POST"])    
 def predicted(disease,doctor):    
