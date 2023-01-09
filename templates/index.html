@@ -147,7 +147,7 @@
 
         <div class="content">
             <h3>we take care of your healthy life</h3>
-            <p>Your heart is the powerhouse to your whole body—that’s why it’s important to provide it with the attention and care it needs.</p>
+            <p>Your heart is the powerhouse to your whole body—that is why it is important to provide it with the attention and care it needs.</p>
             <p>Deciding to make a change in your life is never easy. Breaking old habits and creating healthy ones can be challenging and even discouraging at times. However, it’s not impossible.</p>
             <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
         </div>
@@ -258,31 +258,24 @@
 
         <form action="/appointment" method="post">
             <h3>book appointment</h3>
-            <input type="text" placeholder="your name" class="box" name="patient_name">
-            <input type="number" placeholder="your age" class="box" name="u_age">
-            <input type="number" placeholder="your number" class="box" min="10" max="13" name="u_phno">
-          
-            <div class="box">
-                <select id="dropdown_loc" class="input-padding" name="u_gender" >
-                    <option value="gender" default="true" class="box">gender</option>
-
-                    <option value="Male" >Male</option>
-                    <option value="Female">Female</option>
+            <input type="text" placeholder="Enter your Name" class="box" name="patient_name">
+            <input type="number" placeholder="Enter your Age" class="box" name="u_age">
+            <input type="number" placeholder="Enter your Contact Number" class="box" name="u_phno" pattern="[6789][0-9]{9}">
+            <input type="email" placeholder="Email - ID" class="box" name="u_email"  pattern="[^ @]*@[^ @]*">
+            
+            <div>
+                <select id="drop_gender" name="gender"  class="box">
+                  <option value="gender" default = "true">Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="Others">Others </option>
                 </select>
             </div>
-            <!-- 
-                  <p>Gender:</p>   
-            <input type="radio" id="male" name="u_gender" value="MALE">
-            <label for="html" >Male</label><br>
-            <input type="radio" id="female" name="u_gender" value="FEMALE">
-            <label for="css">Female</label><br> 
-            </div>
-        -->
-            <input type="email" placeholder="your email" class="box" name="u_email">
-            </br>
-            <div class="box">
-            <select id="dropdown_loc" class="input-padding" name="u_location" >
-                <option value="location" default="true" class="box">Location</option>
+    
+        
+            <div>
+            <select id="dropdown_loc" name="u_location"  class="box">
+                <option value="location" default="true">Location</option>
                 <option value="shamshabad">Shamshabad</option>
                 <option value="kukatpally">Kukatpally</option>
                 <option value="HITECHcity">HITECH CIty</option>
@@ -299,9 +292,10 @@
                 <option value="uppal">Uppal</option>
                 </select> 
             </div>
-            <div class="box" >
-                  <select id="disease1" class="input-padding" name="Disease">
-                    <option value="None" default = "true" class="box">Disease</option>
+
+            <div>
+            <select id="disease1"  name="Disease"  class="box">
+                    <option value="None" default = "true">Disease</option>
                     <option value="Fungalinfection">Fungal infection </option>
                     <option value="Allergy">Allergy</option>
                     <option value="GERD">GERD </option>
@@ -345,7 +339,7 @@
                     <option value="AIDS">AIDS</option>
                     <option value="Impetigo">Impetigo </option>
                 </select>
-              </div>     
+            </div>     
 
                 <input type="date" name="u_date" class="box"/>
       

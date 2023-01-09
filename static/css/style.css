@@ -88,7 +88,7 @@ section:nth-child(even){
 }
 
 .header{
-    padding:2rem 9%;
+    padding:0.5%;
     position: fixed;
     top:0; left: 0; right: 0;
     z-index: 1000;
@@ -229,6 +229,7 @@ section:nth-child(even){
 }
 
 .about .row{
+    padding-bottom: 10%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -262,6 +263,8 @@ section:nth-child(even){
 }
 
 .doctors .box-container{
+    padding-bottom:5%;
+    padding-top: 6%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:2rem;
@@ -316,10 +319,11 @@ section:nth-child(even){
 }
 
 .book .row{
+    padding-bottom: 10%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap:2rem;
+    gap:6rem;
 }
  
 .book .row .image{
@@ -336,7 +340,7 @@ section:nth-child(even){
     border:var(--border);
     box-shadow: var(--box-shadow);
     text-align: center;
-    padding: 2rem;
+    padding: 0.5%;
     border-radius: .5rem;
 }
 
@@ -362,6 +366,8 @@ section:nth-child(even){
 }
 
 .review .box-container{
+    padding-top: 4%;
+    padding-bottom: 10%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap:2rem;
@@ -485,6 +491,7 @@ section:nth-child(even){
 }
 
 .footer .box-container{
+    padding-top: 5%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
     gap:2rem;
