@@ -20,12 +20,14 @@ var password = document.getElementById("logpass");
 var confirm_password = document.getElementById("c_logpass");
 
 function validatePassword(){
+  console.log(password);
+  console.log(confirm_password);
   if(password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Passwords Don't Match");
-  } else {
-    confirm_password.setCustomValidity('');
+    alert("Passwords Don't Match");
+  } 
+  else{
+    alert("Registered Successfully");
   }
 }
-
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
